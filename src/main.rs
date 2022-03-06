@@ -4,8 +4,6 @@ use sqlparser::ast::{SelectItem, SetExpr, Statement, TableFactor};
 use sqlparser::dialect::PostgreSqlDialect;
 use sqlparser::parser::Parser;
 
-struct SeqScan {}
-
 fn main() {
     let dialect = PostgreSqlDialect {};
     let sql = "select * from tbl;";
